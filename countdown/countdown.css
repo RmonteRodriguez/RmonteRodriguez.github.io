@@ -1,0 +1,84 @@
+body{
+    background-color: white;
+}
+
+h1 {
+    color: darkcyan;
+}
+
+#text {
+    height: 100px;
+    width: 400px;
+    color: grey;
+}
+
+#days {
+    height: 100px;
+    width: 100px;
+    padding-top: 0px;
+    margin: auto;
+    position: relative;
+    top: 75px; left: 0; bottom: 0; right: 0;
+    font-family: courier, monospace;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 1px;
+    color: white;
+    background-color: darkcyan;
+    display: inline-block;
+}
+
+#hours {
+    height: 100px;
+    width: 100px;
+    padding-top: 0px;
+    margin: auto;
+    position: relative;
+    top: 75px; left: 0; bottom: 0; right: 0;
+    font-family: courier, monospace;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 1px;
+    color: white;
+    background-color: darkcyan;
+    display: inline-block;
+}
+
+#minutes {
+    height: 100px;
+    width: 100px;
+    padding-top: 0px;
+    margin: auto;
+    position: relative;
+    top: 75px; left: 0; bottom: 0; right: 0;
+    font-family: courier, monospace;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 1px;
+    color: white;
+    background-color: darkcyan;
+    display: inline-block;
+}
+
+#seconds {
+    height: 100px;
+    width: 100px;
+    padding-top: 0px;
+    margin: auto;
+    position: relative;
+    top: 75px; left: 0; bottom: 0; right: 0;
+    font-family: courier, monospace;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 1px;
+    color: white;
+    background-color: darkcyan;
+    display: inline-block;
+}
+
+#image {
+    margin: auto;
+    position: relative;
+    top: 0px; left: 0px; bottom: 0; right: 0;
+    display: inline-block;
+}

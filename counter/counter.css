@@ -1,0 +1,59 @@
+h1{
+   font-family: courier, monospace;
+   text-align: center;
+   font-size: 75px;
+}
+
+#demo{
+  font-family: courier, monospace;
+  text-align: center;
+  font-size: 75px;
+}
+
+#decreaseButton{
+    height: 40px;
+    width: 150px;
+    margin: 0;
+    position: absolute;
+    top: 45%; left: 35%; bottom: 0; right: 0;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding-top: 0px;
+    font-family: courier, monospace;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#resetButton{
+    height: 40px;
+    width: 100px;
+    margin: 0;
+    position: absolute;
+    top: 45%; left: 50%; bottom: 0; right: 0;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding-top: 0px;
+    font-family: courier, monospace;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#increaseButton{
+    height: 40px;
+    width: 150px;
+    margin: 0;
+    position: absolute;
+    top: 45%; left: 65%; bottom: 0; right: 0;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding-top: 0px;
+    font-family: courier, monospace;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: transparent;
+}
