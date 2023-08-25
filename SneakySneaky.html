@@ -40,6 +40,7 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
+							<li><a href="RemoteGameStudio.html">Remote Game Studio</a></li>
 							<li><a href="Games.html">Games</a></li>
 							<li><a href="GameSystems.html">System Design</a></li>
 							<li><a href="Levels.html">Level Design</a></li>
@@ -52,17 +53,60 @@
 						<div class="inner">
 							<h1>Sneaky Sneaky</h1>
 							<div class="row">
-								<div class="column">
-								  <img src="images/Sneaky1.png" alt="Snow" style="width:100%">
-								</div>
-								<div class="column">
-									<img src="images/Sneaky2.png" alt="Snow" style="width:100%">
-								</div>
-								<div class="column">
-									<img src="images/Sneaky3.png" alt="Snow" style="width:100%">
-								</div>
+
+								<div class="slider">
+
+									<!-- slide 1 -->
+									<div class="slide">
+										<img src="images/Sneaky1.png" alt="Snow">
+									</div>
+							  
+									 <!-- slide 2 -->
+									<div class="slide">
+										<img src="images/Sneaky2.png" alt="Snow" >
+									</div>
+							  
+									 <!-- slide 3 -->
+									<div class="slide">
+										<img src="images/Sneaky3.png" alt="Snow">
+									</div>
+							  
+									 <!-- Control buttons -->
+									<button class="btn btn-next">></button>
+									<button class="btn btn-prev"><</button>
+								  </div>
 							  </div>
-							<p>Sneaky Sneaky is a project I did to when I was studying AI and statemachines in Unreal Engine. In this project I made a guard who has multiple states, the guards would be able to detect the player and if they detect the player they would go to an alarm and set it off. The player could also distract the guards by pressing a button. The states of the guards include idle, patrol, alarmed, and distracted. The guards would patrol around going to set points and then idle there for a few seconds before moving onto the next area. I also added a a debug mode that allows the player to manually change the state of the guards.</p>
+							  <div class="block_1"></div> <hr />
+							  <h2>Overview</h2>
+							<p>Sneaky Sneaky is a project I worked on during my time at Fullsail, the goal of the project was to teach students about Unreal’s AI systems and to teach the fundamentals of statemachines within programming. Throughout the small level that is included within the project there are enemy Ai that could detect the player. The enemies have different states that they could be in depending on what they notice. Their default state would keep them roaming around moving to different points on the nav mesh, the next state would be the alarmed state in which they would either chase the player or go and trigger the alarm that alerts the other AI of the player. The goal for the player is to make it to the end of the level without getting caught or else they will need to start again.
+							</p>
+						  <p></p>
+							<div class="block_1"></div> <hr />
+							<h2>Features</h2>
+							<ul>
+								<li>Top down point and click player movement</li>
+								<li>Enemy AI that roams, chases the player, and sounds alarm</li>
+								<li>Win condition for when the player reaches the end of the level</li>
+							</ul>
+						  <p></p>
+						  <div class="block_1"></div> <hr />
+							<h2>Project Design Goals</h2>
+							<ul>
+								<li>Design AI eneimeies that could move around a nav mesh and detect the player</li>
+								<li>Have AI haver different states that they could switch between depending on their previous state</li>
+							</ul>
+						  <p></p>
+						  <div class="block_1"></div> <hr />
+							<h2>Tech</h2>
+							<ul>
+								<li><b>Platform: </b>Windows PC</li>
+								<li><b>Engine: </b>Unreal</li>
+								<li><b>Language: </b>Blueprints</li>
+								<li><b>Tools Used: </b>Unreal</li>
+								<li><b>Team Size: </b>1</li>
+								<li><b>Role: </b>Game Designer, System Designer, Level Designer, AI Programmer</li>
+							</ul>
+						  <p></p>
 							<p></p>
 						</div>
 					</div>
