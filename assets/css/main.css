@@ -2624,7 +2624,7 @@ input, select, textarea {
 					height: 100%;
 					opacity: 1.0;
 					z-index: 1;
-					opacity: 0.8;
+					opacity: 0.5;
 				}
 
 				.tiles article > .image:after {
@@ -2711,29 +2711,29 @@ input, select, textarea {
 						margin-bottom: 0;
 					}
 
-			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
-			}
-
-			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
-			}
-
-			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
-			}
-
-			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
-			}
-
-			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
-			}
-
-			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
-			}
+					.tiles article.style1 > .image:before {
+						background-color: #7a7a7a;
+					}
+		
+					.tiles article.style2 > .image:before {
+						background-color: #7a7a7a;
+					}
+		
+					.tiles article.style3 > .image:before {
+						background-color: #7a7a7a;
+					}
+		
+					.tiles article.style4 > .image:before {
+						background-color: #7a7a7a;
+					}
+		
+					.tiles article.style5 > .image:before {
+						background-color: #7a7a7a;
+					}
+		
+					.tiles article.style6 > .image:before {
+						background-color: #7a7a7a;
+					}
 
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
@@ -2835,7 +2835,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 2em 0 0.1em 0 ;
 	}
 
 		#header .logo {
@@ -3404,4 +3404,90 @@ input, select, textarea {
 
   .row {
 	justify-content: center;
+  }
+
+  .verticalLine {
+	width: 2px; /* Line width */
+	background-color: black; /* Line color */
+	height: 17pc; /* Override in-line if you want specific height. */
+	float: left; /* Causes the line to float to left of content. 
+	  You can instead use position:absolute or display:inline-block
+	  if this fits better with your design */
+  }
+
+  /* Include padding and border in total box size*/
+* {
+	box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that float next to each other */
+  .column-2 {
+	float: right;
+	width: 45%;
+	padding: 40px;
+	padding-left:70px;
+	padding-right: 70px;
+	height: auto;
+	margin:30px;
+	margin-right:30px;
+	margin-bottom: 70px;
+	background-color: #dfddda;
+	line-height:2;
+  }
+
+  .column-3 {
+	float: center;
+	width: 90%;
+	padding: 40px;
+	padding-left:70px;
+	height: auto;
+	margin:30px;
+	margin-right:30px;
+	margin-bottom: 70px;
+	background-color: #dfddda;
+	line-height:2;
+	color: #000000;
+	display: flex;
+  }
+
+  .rightText {
+	vertical-align: right;
+	padding-left:150px;
+	width: 60%;
+	text-size-adjust: none;
+	right: 300px; /* you can change this value to your preference */
+  }
+
+  .leftText {
+	width: 40%;
+	left: 30px; /* you can change this value to your preference */
+  }
+   
+  .column-1 {
+	width: 45%;
+	padding: 40px;
+	padding-left:70px;
+	padding-right: 70px;
+	height: auto;
+	margin-right:30px;
+	margin-bottom: 70px;
+	background-color: #dfddda;
+	line-height:2;
+  }
+
+  .Lasagna {
+	width: 39%;
+	padding-top: 70px;
+	height: auto;
+  }
+
+  .vid {
+	display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+	display: flex; 
+    justify-content: center;
   }
