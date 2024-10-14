@@ -3491,3 +3491,20 @@ input, select, textarea {
 	display: flex; 
     justify-content: center;
   }
+
+  .right-img {
+	margin-left: -4pc;
+	margin-top: 4pc;
+  }
+
+  .lower_section {
+	margin-left: 10pc;
+  }
+
+  #footer {
+	width: 100%;
+  }
+
+  .inner {
+	margin-left: 10pc;
+  }
