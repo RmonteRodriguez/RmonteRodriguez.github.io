@@ -81,7 +81,7 @@
 						<div class="column-3">
 						  <div class="leftText">
 							  <h2>Single/Multiplayer capability</h2>
-							  <p>I wanted to add the ability for multiple people to race against eachother. I added in multiplayer capability using Unity's new input system allowing the second player to join on controller while the first player uses the keyboard. </p>  
+							  <p>I wanted to add the ability for multiple people to race against eachother. This was the first time I made a game with local multiplayer, the first challenged I faced was getting both power ups and enemies to interact with either player as during the initial prototype I foolishly hard coded everything to search for the initial player. After going in and refactoring my code I was able to get enemies and power ups to interact with any player that comes into contact with them.</p>  
 						  </div>
 						  <div class="rightText">
 							  <ul>
@@ -96,14 +96,14 @@
 						<div class="rightText">
 							<ul>
 								<h2>Variety of Power Ups</h2>
-								<p>To keep the game interesting and fun I added a variety of powerups which could be used against the enemies and the other players within the race. Some powerups will slow things down, others will protect you, and some may even be used to open parts of the map that is not normally accessible.</p>  
+								<p>To keep the game interesting and fun I added a variety of powerups which could be used against the enemies and the other players. I designed a variety of power ups from one time use ones like grenades that could destroy portions of a level or hurt enemies or multiple use ones like the freeze power up that freezes both enemies and other players. Besides the hard coding issues I had with implementing multiplayer the biggest thing I had to focus on when designing power ups were keeping them balanced. I wanted each power up to have both positive and negative benefits such as the balloon power up which allows the player to jump higher and fall slower, however they run slightly slower. </p>  
 							</ul>
 						</div>
 					</div>
 					<div class="column-3">
 						<div class="leftText">
 							<h2>Speedrun Timer</h2>
-							<p>We needed a way to score the players so I opted to have a speedrun timer that will be used to show the best time of the players. At the end of the race the times are shown to see who was faster. It will also show the fastest time for the stage as well so players could strive to get better times.</p>  
+							<p>We needed a way to score the players so I opted to have a speedrun timer that will be used to show the best time of the players. The main issue I faced when implementing this feature was each player having their own timer so we could display them at the end of the race. I was able to get each player to have their own timer and when the player reaches the finishline it saves their time to show on the post race scene.</p>  
 						</div>
 						<div class="rightText">
 							<ul>
@@ -118,7 +118,7 @@
 						<div class="rightText">
 							<ul>
 								<h2>Variety of hazards/enemies</h2>
-								<p>Another way we decided make the races more interesting is by adding hazards and enemies. Some examples of hazards I added were spikes that would damage the player and pits that would immediately kill the player. We also have a variety of enemies. We have a slime that would damage the player and slow them down temporarily, we also have cannons that will shoot projectiles at the player.</p>  
+								<p>To keep things interesting we needed hazards and enemies. As the hazards were easy to implement the enemies were a bit more complicated. As stated for the multiplayer portion I had hardcoded the enemies to react to the player so when I implemented multiplayer all the enemies broke. After resolving that, the next issue I ran into was enemies reacting to the level in weird ways such as falling through the level at the start of the race, just walking off of platforms, or even clippling into the wall and getting stuck. The way I fixed these issues were by adjusting rigidbodies for better detection as well as not spawning in the enemies until the actual race starts. Doing this allowed the level to fulling load in with its collisions then the enemies would be brought in.</p>  
 							</ul>
 						</div>
 					</div>
