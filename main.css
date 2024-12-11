@@ -3181,8 +3181,7 @@ input, select, textarea {
 	#footer {
 		padding: 1em 0 0 ;
 		width:100%;
-		margin-top: -5pc;
-		padding-bottom: 2.5pc;
+		padding-bottom: 1.5pc;
 		align-content: center;
 	}
 
@@ -3576,4 +3575,22 @@ input, select, textarea {
 .centerText h2 {
 	display: flex; 
     justify-content: center;
+}
+
+.centerButton {
+	display: block; 
+    justify-self: center;
+}
+
+.buttonContainer {
+	float: center;
+    width: auto;
+    padding: 40px;
+    padding-left: 70px;
+    height: auto;
+    background-color: #dfddda;
+    line-height: 2;
+    color: #000000;
+    display: grid;
+	padding-top: 2pc;
 }
