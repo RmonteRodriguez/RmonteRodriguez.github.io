@@ -105,7 +105,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #dfddda;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -176,7 +176,6 @@ input, select, textarea {
 		font-size: 2.75em;
 		font-weight: 700;
 		line-height: 1.3;
-		margin: 0 0 1em 0;
 		letter-spacing: -0.035em;
 	}
 
@@ -1806,6 +1805,10 @@ input, select, textarea {
 
 /* Icon */
 
+	.icon-sec {
+		margin-bottom: 100pc;
+	}
+
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
@@ -2579,7 +2582,9 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		position: relative;
-		margin: -2.5em 0 0 -2.5em;
+		margin: -1.5em 0 0 -1.5em;
+		display: block;
+		margin-top: -20pc;
 	}
 
 		.tiles article {
@@ -2588,8 +2593,9 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(33.33333% - 2.5em);
-			margin: 2.5em 0 0 2.5em;
+			width: 100%;
+			/* calc(33.33333% - 2.5em)*/
+			margin: 1.5em 0 0 1.5em;
 		}
 
 			.tiles article > .image {
@@ -2599,9 +2605,11 @@ input, select, textarea {
 				transition: transform 0.5s ease;
 				position: relative;
 				display: block;
-				width: 100%;
+				width: 984px;
+				height: 286px;
 				border-radius: 4px;
 				overflow: hidden;
+				margin: auto;
 			}
 
 				.tiles article > .image img {
@@ -3171,8 +3179,10 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
-		background-color: #f6f6f6;
+		padding: 1em 0 0 ;
+		width:100%;
+		padding-bottom: 1.5pc;
+		align-content: center;
 	}
 
 		#footer > .inner {
@@ -3195,8 +3205,8 @@ input, select, textarea {
 			}
 
 			#footer > .inner section:nth-child(1) {
-				width: calc(66% - 2.5em);
-				margin-right: 2.5em;
+				width: 100%;
+				
 			}
 
 			#footer > .inner section:nth-child(2) {
@@ -3210,7 +3220,8 @@ input, select, textarea {
 				margin-top: 5em;
 				list-style: none;
 				font-size: 0.8em;
-				color: rgba(88, 88, 88, 0.5);
+				color: rgba(0, 0, 0, 0.5);
+				font-weight: 900;
 			}
 
 				#footer > .inner .copyright a {
@@ -3437,17 +3448,15 @@ input, select, textarea {
 
   .column-3 {
 	float: center;
-	width: 90%;
+	width: auto;
 	padding: 40px;
 	padding-left:70px;
 	height: auto;
-	margin:30px;
-	margin-right:30px;
-	margin-bottom: 70px;
 	background-color: #dfddda;
 	line-height:2;
 	color: #000000;
 	display: flex;
+	width: 100%;
   }
 
   .rightText {
@@ -3456,11 +3465,15 @@ input, select, textarea {
 	width: 60%;
 	text-size-adjust: none;
 	right: 300px; /* you can change this value to your preference */
+	align-self: center;
   }
 
   .leftText {
 	width: 40%;
 	left: 30px; /* you can change this value to your preference */
+	align-self: center;
+	text-align: left;
+	;
   }
    
   .column-1 {
@@ -3485,16 +3498,17 @@ input, select, textarea {
 	display: flex; 
     justify-content: center;
     align-items: center;
+	padding-top: 2.5pc;
   }
 
   .title {
 	display: flex; 
     justify-content: center;
+	padding-top: 2.5pc;
   }
 
   .right-img {
 	margin-left: -4pc;
-	margin-top: 4pc;
   }
 
   .lower_section {
@@ -3508,3 +3522,98 @@ input, select, textarea {
   .inner {
 	margin-left: 10pc;
   }
+
+  .fix {
+		margin-left: -10pc;
+	}
+
+.leftFix {
+	padding-right: 30pc;
+}
+
+.rightTextFix {
+	margin-left: 10pc;
+}
+
+.summary-text {
+	font-size: medium;
+}
+
+.experience {
+	display: flex; 
+    justify-content: center;
+	padding-bottom: 0;
+	padding-top: 2.5pc;
+}
+
+.block_1 {
+	border-bottom: 2.5px solid rgb(0, 0, 0);
+	padding-top: 2.5pc;
+    width: 100%;
+}
+
+.professional {
+	display: block; 
+    justify-content: center;
+	padding-top: 5pc;
+}
+
+.iconssec {
+	display: flex; 
+    justify-content: center;
+}
+
+.icon {
+	display: flex; 
+    justify-content: center;
+}
+
+.centerText {
+	display: block; 
+    justify-content: center;
+	padding-left:70px;
+	padding-right: 70px;
+}
+
+.centerText h2 {
+	display: flex; 
+    justify-content: center;
+}
+
+.centerButton {
+	display: block; 
+    justify-self: center;
+}
+
+.buttonContainer {
+	float: center;
+    width: auto;
+    padding: 40px;
+    padding-left: 70px;
+    height: auto;
+    background-color: #dfddda;
+    line-height: 2;
+    color: #000000;
+    display: grid;
+	padding-top: 2pc;
+}
+
+.rightText .right-img {
+	float: center;
+    height: auto;
+    background-color: #dfddda;
+    line-height: 2;
+    color: #000000;
+    display: grid;
+
+}
+
+.leftText .left-img {
+	margin-left: -4pc;
+	float: center;
+    height: auto;
+    background-color: #dfddda;
+    line-height: 2;
+    color: #000000;
+    display: grid;
+}
