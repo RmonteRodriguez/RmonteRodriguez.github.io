@@ -50,108 +50,153 @@
 						<div class="inner">
 							<h1>Capstone</h1>
 							<div class="vid">
-								<iframe width="760" height="415" src="https://www.youtube.com/watch?v=UzFMRlvyeyo"></iframe>
+								<iframe width="760" height="415" src="https://www.youtube.com/embed/UzFMRlvyeyo"></iframe>
 							</div>
 
-							  <div class="block_1"></div> <hr />
+							  <div class="block_1"></div>
 							  <div class="title">
-								<h1>Overview</h1>
+								<h1>Introduction</h1>
 							</div>
 							  <div class="column-3">
 								<div class="leftText">
 									<h2>Summary</h2>
-									<p>This was the capstone project for my college degree, spanning approximately four months. I collaborated with a team of five to develop a game inspired by an existing title. Our team chose Genshin Impact as a reference, but we put our own spin on it by adapting it into a 2D platformer to make it unique. At the end of each milestone, we held sprint reviews to showcase our progress, and I’ve included buttons to view each of these milestones. Additionally, we produced a trailer for the game to highlight its features and gameplay.</p>  
+									<p class="summary-text">This project served as the capstone for my college degree and lasted around four months. I worked alongside a team of five to create a game inspired by an existing title. We chose Genshin Impact as our reference but reimagined it as a 2.5D platformer to give it a unique twist. Throughout the development process, we held sprint reviews at the end of each milestone to present our progress. I’ve included buttons to explore these milestones in more detail. Additionally, we produced a trailer to showcase the game’s features and gameplay.</p>  
 								</div>
 								<div class="rightText">
-									<h2>Design Goals</h2>
+									<h2>Project Details</h2>
 									<ul>
-										<li>Design a genshin impact clone</li>
-										<li>Design levels that amplify the abilities of the character and their elemental abilities</li>
-										<li>Design enemies that have elemental abilities
-										</li>
-										<li>Design boss enemies with unique powers compared to normal enemies</li>
+										<li>Engine: Unreal Engine 4</li>
+										<li>Platform: Windows PC</li>
+										<li>Level Design</li>
+										<li>AI Scripting</li>
+										<li>Developed over 6 months</li>
+										<li>Role: Game Designer and Programmer</li>
 									</ul>
 								</div>
 							</div>
-							<div class="block_1"></div> <hr />
+							<div class="block_1"></div>
 							<div class="title">
-								<h1>What I Worked On</h1>
+								<h1>Pre-Production</h1>
 							</div>
-
+							<div class="column-3">
+								<div class="leftText">
+									<h2>Design Documentation</h2>
+									<p>The first month of our capstone project was dedicated to planning and design, outside of the game engine. As a team of five designers, we collaboratively developed the game design document. We chose to base our game on Genshin Impact, designing our own version with similar mechanics and features. To ensure a strong foundation, we conducted a competitive analysis of Genshin Impact to fully understand its functionality and core design elements. Once the design document was complete, it was reviewed and graded by our professor, and passing this stage was essential to move forward with the next phase of the project.</p>  
+								</div>
+								<div class="rightText">
+									<img src="images/1-2Preview.png" alt="Snow" width="580" height="300" class="right-img">
+								</div>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<h2>Jira Ticket Creation</h2>
+									<p>While primarily a project management task, creating and maintaining Jira boards was a crucial part of our workflow. I was responsible for creating various tickets to track my tasks and progress throughout the project. These tickets allowed me to stay organized and ensure that my contributions were clear and measurable. We also utilized the time tracking feature to log the amount of time spent on each ticket during every sprint, helping us monitor our productivity and maintain an efficient development process.</p> 
+								</div>
+								<div class="rightText">
+									<img src="images/1-2Preview.png" alt="Snow" width="580" height="300" class="right-img">
+								</div>
+							</div>
+							<div class="block_1"></div>
+							<div class="title">
+								<h1>Gameplay</h1>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<img src="images/Capstone5.png" alt="Snow" width="580" height="300" class="left-img">
+								</div>
+								<div class="rightText">
+									<ul>
+										<h2>Character Swapping</h2>
+										<p>One of the key features of the game was the ability to switch between multiple characters. Initially, I faced some challenges implementing this, but I eventually resolved them. Each character had their own health bar, so I had to ensure that if a character died, the game would automatically switch to another active character. Additionally, I had to implement a system that prevented the player from switching to a character that had already been defeated, ensuring a smooth and logical gameplay experience.</p>  
+									</ul>
+								</div>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<img src="images/Capstone5.png" alt="Snow" width="580" height="300" class="left-img">
+								</div>
+								<div class="rightText">
+									<ul>
+										<h2>Healing Pad</h2>
+										<p>I added a small but important feature: healing pads that could be placed throughout the levels. When the player walks onto a healing pad, it restores their health to full. Additionally, the healing pad also revives any dead characters in the player's party, providing a strategic element to the gameplay by encouraging players to manage their characters' health and positioning.</p>  
+									</ul>
+								</div>
+							</div>
+							<div class="block_1"></div>
+							<div class="title">
+								<h1>Enemy AI</h1>
+							</div>
+							<div class="centerText">
+								<p>I designed and developed several specialized enemies with unique abilities, setting them apart from the smaller slime enemies featured in the game.</p>  
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<h2>Large Ice Slime</h2>
+									<p>The Large Ice Slime inflicts an ice elemental status effect on the player upon contact. Unlike regular slimes, it has a distinct attack pattern, periodically shooting ice shards that not only damage the player but also apply the ice effect. Additionally, the Ice Slime is vulnerable to fire attacks, providing players with a strategic weakness to exploit.</p>
+								</div>
+								<div class="rightText">
+									<img src="images/1-2Preview.png" alt="Snow" width="580" height="300" class="right-img">
+								</div>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<h2>Large Earth Slime</h2>
+									<p>The Large Earth Slime inflicts an earth elemental status effect on the player upon contact. Similar to the Large Ice Slime, it has a unique attack. Occasionally, the Earth Slime will leap into the air and slam down, causing earth spikes to erupt from the ground. These spikes not only damage the player but also apply the earth elemental effect, adding an extra layer of challenge.</p>
+								</div>
+								<div class="rightText">
+									<img src="images/1-2Preview.png" alt="Snow" width="580" height="300" class="right-img">
+								</div>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<h2>Large Electro Slime</h2>
+									<p>The final enemy I worked on was the Large Electro Slime. Like the other slimes, it has a unique ability and applies its respective elemental effect to the player. Its special attack involves creating a large electric sphere around itself, which damages the player and inflicts the electro element. This attack adds another layer of strategy, as players must avoid the sphere to prevent taking both damage and the elemental effect.</p>
+								</div>
+								<div class="rightText">
+									<img src="images/1-2Preview.png" alt="Snow" width="580" height="300" class="right-img">
+								</div>
+							</div>
+							<div class="block_1"></div>
+							<div class="title">
+								<h1>Closing Thoughts</h1>
+							</div>
+							<div class="column-3">
+								<div class="centerText">
+									<p>This project marked the culmination of my college career, bringing together everything I learned throughout my degree. I gained valuable insights, particularly during the pre-production phase. This was the first time I created a game design document, and I appreciated how Full Sail structured the capstone to mirror the actual game development life cycle.</p>  
+									<p>In conclusion, this project taught me so much and has significantly influenced the way I approach future projects.</p>  
+								</div>
+							</div>
+							<div class="block_1"></div>
+						  <div class="title">
+							<h1>Additional Links</h1>
 						</div>
-						<div class="column-3">
-						  <div class="leftText">
-							  <h2>Enemy Slimes</h2>
-							  <p>In Genshin Impact, slimes are one of the primary enemies, so we decided to include them in our game as well. I was responsible for implementing special slimes, which were designed to be stronger than the regular ones. For the larger slimes, I wanted each to have a unique ability tied to their elemental type. For example, I created an Earth Slime that would leap into the air and slam onto the ground, causing spikes to emerge and damage the player. Overall, I didn’t encounter many challenges while implementing these special slimes.</p>  
-						  </div>
-						  <div class="rightText">
-							  <ul>
-								<img src="images/Capstone2.png" alt="Snow" width="580" height="300" class="right-img">
-							  </ul>
-						  </div>
-					  </div>
-					  <div class="column-3">
-						<div class="leftText">
-							<img src="images/Capstone5.png" alt="Snow" width="580" height="300">
+						<div class="ButtonsContainer">
+							<div class="centerText">
+								<div class="CenterButtonContainer">
+									<a href="https://youtu.be/Uz0yOxQFZ-w?t=695" target="_blank" class="button">Watch Sprint Review 1</a>
+									<a href="https://youtu.be/x2JSBH9aOqw?t=459" target="_blank" class="button">Watch Sprint Review 2</a>
+									<a href="https://youtu.be/nfTL5e7afrw?t=1691" target="_blank" class="button">Watch Sprint Review 3</a>
+									<a href="https://youtu.be/LEd31UiI1_0?t=850" target="_blank" class="button">Watch Sprint Review 4</a>
+									<a href="https://youtu.be/3H6cGpg0ONA?t=1418" target="_blank" class="button">Watch Sprint Review 5</a>
+									<a href="https://youtu.be/e4fctFfr94k?t=304" target="_blank" class="button">Watch Sprint Review 6</a>
+									<a href="https://youtu.be/nAL2QJxAHSw?t=275" target="_blank" class="button">Watch Sprint Review 7</a>
+								</div>
+							</div>
 						</div>
-						<div class="rightText">
-							<ul>
-								<h2>Character Swapping</h2>
-								<p>Similar to Genshin Impact, our game features the ability to switch between characters. This was the most complex feature I implemented, as it involved a lot of moving parts. We wanted to allow the player to switch to any character, but we also needed to ensure that they couldn’t swap to a character who was already dead. Additionally, I set it up so that if a character dies, the game will automatically switch to the next available character who is still alive.</p>  
-							</ul>
-						</div>
+						<div class="block_1"></div>
+						<!-- Footer -->
+						<footer id="footer">
+							<section class="iconssec">
+								<ul class="icons">
+									<li><a href="https://github.com/RmonteRodriguez" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="mailto:rmonterodriguez@gmail.com?subject=&body=" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						</footer>
 					</div>
-					<div class="column-3">
-						<div class="leftText">
-							<h2>Levels/Unique Level Features</h2>
-							<p>As part of the assignment, I was tasked with designing a level for our game. I created two distinct levels and followed the full design process, from moodboards and block meshes to replacing assets. Each level also featured unique elements I incorporated. In the first level, I wanted to highlight the ice character's special ability, so I designed large bodies of water that the player could only cross by freezing the water and walking across the ice. In the second level, I introduced gusts of wind that would lift the player to previously unreachable areas, utilizing our gliding feature to enhance exploration.</p>  
-						</div>
-						<div class="rightText">
-							<ul>
-							  <img src="images/Capstone4.png" alt="Snow" width="580" height="300" class="right-img">
-							</ul>
-						</div>
-					</div>
-
-						  <div class="block_1"></div> <hr />
-						  <div class="lower_section">
-							<h2>Tech</h2>
-							<ul>
-								<li><b>Platform: </b>Windows PC</li>
-								<li><b>Engine: </b>Ureal Engine</li>
-								<li><b>Language: </b>Unreal Blueprints</li>
-								<li><b>Tools Used: </b>Unreal Engine, Perforce, Discord, Confluence, Jira</li>
-								<li><b>Team Size: </b>8</li>
-								<li><b>Role: </b>Game Designer, Game Programmer</li>
-							</ul>
-							<p></p>
-							<a href="https://youtu.be/Uz0yOxQFZ-w?t=695" target="_blank" class="button">Watch Sprint Review 1</a>
-							<a href="https://youtu.be/x2JSBH9aOqw?t=459" target="_blank" class="button">Watch Sprint Review 2</a>
-							<a href="https://youtu.be/nfTL5e7afrw?t=1691" target="_blank" class="button">Watch Sprint Review 3</a>
-							<a href="https://youtu.be/LEd31UiI1_0?t=850" target="_blank" class="button">Watch Sprint Review 4</a>
-							<a href="https://youtu.be/3H6cGpg0ONA?t=1418" target="_blank" class="button">Watch Sprint Review 5</a>
-							<a href="https://youtu.be/e4fctFfr94k?t=304" target="_blank" class="button">Watch Sprint Review 6</a>
-							<a href="https://youtu.be/nAL2QJxAHSw?t=275" target="_blank" class="button">Watch Sprint Review 7</a>
-						</div>
-						</div>
-					</div>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<section>
-							<h2>Follow</h2>
-							<ul class="icons">
-								<li><a href="https://github.com/RmonteRodriguez" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-						</section>
-						<ul class="copyright">
-							<li>&copy; RmonteRodriguez. All rights reserved</li>
-						</ul>
-					</div>
-				</footer>
-
+				</div>
 			</div>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
