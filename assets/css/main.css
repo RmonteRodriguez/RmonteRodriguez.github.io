@@ -3611,7 +3611,6 @@ input, select, textarea {
 .leftText .left-img {
 	margin-left: -4pc;
 	float: center;
-    height: auto;
     background-color: #dfddda;
     line-height: 2;
     color: #000000;
