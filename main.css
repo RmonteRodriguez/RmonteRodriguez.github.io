@@ -3465,15 +3465,12 @@ input, select, textarea {
 	width: 60%;
 	text-size-adjust: none;
 	right: 300px; /* you can change this value to your preference */
-	align-self: center;
   }
 
   .leftText {
 	width: 40%;
 	left: 30px; /* you can change this value to your preference */
 	align-self: center;
-	text-align: left;
-	;
   }
    
   .column-1 {
@@ -3509,6 +3506,7 @@ input, select, textarea {
 
   .right-img {
 	margin-left: -4pc;
+	margin-top: 4pc;
   }
 
   .lower_section {
@@ -3605,15 +3603,5 @@ input, select, textarea {
     line-height: 2;
     color: #000000;
     display: grid;
-
-}
-
-.leftText .left-img {
-	margin-left: -4pc;
-	float: center;
-    height: auto;
-    background-color: #dfddda;
-    line-height: 2;
-    color: #000000;
-    display: grid;
+	padding-top: 6pc;
 }

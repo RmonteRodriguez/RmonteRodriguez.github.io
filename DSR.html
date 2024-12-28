@@ -53,110 +53,175 @@
 								<iframe width="760" height="415" src="https://www.youtube.com/embed/hSGAdm7gRtk?si=1ilRbIPx1K6h9hbu"></iframe>
 							</div>
 
-							  <div class="block_1"></div> <hr />
+							  <div class="block_1"></div>
 							  <div class="title">
-								<h1>Overview</h1>
+								<h1>Introduction</h1>
 							</div>
 							  <div class="column-3">
 								<div class="leftText">
 									<h2>Summary</h2>
-									<p>Dreamscape Runners is a fast-paced 2D speed-running platformer where players race against the clock—or each other—through challenging, dream-like landscapes. The goal is to beat your best time or compete head-to-head with another player to reach the finish line. Along the way, players can collect and strategically use a variety of power-ups, such as speed boosts, and gravity-defying abilities, to gain the upper hand. </p>  
+									<p class="summary-text">Dreamscape Runners is a fast-paced 2D speed-running platformer where players race against the clock—or each other—through challenging, dream-like landscapes. The goal is to beat your best time or compete head-to-head with another player to reach the finish line. Along the way, players can collect and strategically use a variety of power-ups, such as speed boosts, and gravity-defying abilities, to gain the upper hand. </p>  
 								</div>
 								<div class="rightText">
-									<h2>Design Goals</h2>
+									<h2>Project Details</h2>
 									<ul>
-										<li>Design a simple yet fun game to allow our programmer to adjust to Unity</li>
-										<li>Design a game that had fast-paced gameplay</li>
-										<li>Design a game that also included some form of combat</li>
-										<li>Design levels that use the power ups to get an advantage</li>
+										<li>Engine: Unity</li>
+										<li>Platform: Windows PC</li>
+										<li>Developed over 5 months</li>
+										<li>Role: Project Lead, Game Producer, Game Designer, Gameplay Programmer, System Programmer, Sound Designer</li>
 									</ul>
 								</div>
 							</div>
-							<div class="block_1"></div> <hr />
+							<div class="block_1"></div>
 							<div class="title">
-								<h1>What I Worked On</h1>
+								<h1>Pre-Production</h1>
 							</div>
-
-						</div>
-						<div class="column-3">
-						  <div class="leftText">
-							  <h2>Single/Multiplayer capability</h2>
-							  <p>I wanted to introduce local multiplayer so players could race against each other. This was my first experience implementing local multiplayer, and one of the initial challenges was getting power-ups and enemies to interact with both players. During the early prototype, I had hard-coded interactions to only recognize the first player, which caused issues. After refactoring the code, I was able to ensure that enemies and power-ups now correctly interact with any player that comes into contact with them.</p>  
+							<div class="column-3">
+								<div class="centerText">
+									<h2>Creating Initial Design Document</h2>
+									<p>In the preproduction phase, I began by meeting with my team to discuss our vision for the game. Following this initial brainstorming session, I took the lead in creating the first iteration of the Game Design Document (GDD). This document outlined key elements such as design goals, design pillars, the game hook, and user stories. Once the document was drafted, I presented it to the team for feedback and revisions. Given that this was my first project where I wasn't managing every task directly, it was essential for me to ensure that the document was clear and detailed. I wanted to make sure the lead developer fully understood the vision and requirements, so we could stay aligned throughout the development process.</p>  
+								</div>
+							</div>
+							<div class="column-3">
+								<div class="centerText">
+									<h2>Complete Competitive Analysis</h2>
+									<p>To refine our design and gain insight into the existing landscape, I conducted several competitive analyses of different games. Specifically, I analyzed three titles: the original Mario Bros., BattleBlock Theater, and SpeedRunners.</p>
+									<p>The analysis of SpeedRunners was the most pivotal, as its mechanics closely aligned with the concepts we were exploring. In this 2D platformer, players race against each other, utilizing various power-ups to outpace their opponents. During each analysis, I played through the game, breaking down its core mechanics and features. I documented the dynamics that players might encounter and how these could impact gameplay experiences. I also compared the game to similar titles and highlighted design insights that could inform our own project.</p> 
+								</div>
+							</div>
+							<div class="block_1"></div>
+							<div class="title">
+								<h1>Gameplay</h1>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<iframe  width="680" height="400" allow="autoplay" class="left-img" src="https://drive.google.com/file/d/1w6nmJ9ZUXdy87W_e8b8VcghZMRit6hak/preview"></iframe>
+								</div>
+								<div class="rightText">
+									<ul>
+										<h2>Handful of Power-Ups</h2>
+										<p>I implemented a diverse range of power-ups that players can use to gain an edge over enemies or other players. These include one-time use items, such as grenades that can damage enemies or alter the environment, and reusable abilities like the Freeze power-up, which immobilizes both enemies and players. Balancing these power-ups was essential, with each designed to offer distinct advantages and trade-offs. For example, the Balloon power-up boosts jump height and reduces fall speed, but at the cost of slower movement. Despite challenges integrating power-ups into multiplayer, ensuring their balance was crucial to delivering a fun, fair, and engaging gameplay experience.</p>  
+									</ul>
+								</div>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<iframe  width="680" height="400" allow="autoplay" class="left-img" src="https://drive.google.com/file/d/1Dc1-LSqqghrVZpzgmcR6mRgJ9ReopRba/preview"></iframe>
+								</div>
+								<div class="rightText">
+									<ul>
+										<h2>Speedrun Timer</h2>
+										<p>To track player performance, I developed a speedrun timer that records each player's best time. The primary challenge was ensuring each player had an individual timer, particularly in multiplayer mode, so we could show personalized times at the end of the race. Once this was resolved, I implemented a system where the player's time is saved and displayed on the post-race screen as soon as they cross the finish line.</p>  
+									</ul>
+								</div>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<iframe  width="680" height="400" allow="autoplay" class="left-img" src="https://drive.google.com/file/d/1kpp6uvJI6RCihWwqOG-8-Bze5_-P-PAl/preview"></iframe>
+								</div>
+								<div class="rightText">
+									<ul>
+										<h2>Hazards</h2>
+										<p>The levels feature a variety of hazards designed to challenge the player and impede their progress. For the early levels, I introduced simple hazards like spikes, which damage the player upon contact. If the player has a power-up, they can survive the spikes but will lose the power-up in the process. Another hazard introduced in these levels is the pit. Unlike the spikes, falling into a pit results in an instant defeat, regardless of whether the player has a power-up.</p>  
+									</ul>
+								</div>
+							</div>
+							<div class="block_1"></div>
+							<div class="title">
+								<h1>Multiplayer</h1>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<h2>Overview</h2>
+									<p>A key design goal for this project was to incorporate multiplayer gameplay. Since this was a learning project, I focused on implementing local multiplayer to keep the scope manageable.</p>
+									<p>Using Unity's input system, I enabled the second player to join the game by pressing a button on their controller before selecting a level. Once both players are in the game, Player 1 uses the keyboard, while Player 2 controls their character with a controller, and both players spawn into the game together.</p>   
+								</div>
+								<div class="rightText">
+									<iframe  width="680" height="400" allow="autoplay" class="left-img" src="https://drive.google.com/file/d/10FOSZkARQ-F8s8YfqVOkH4m2cbfVfHKA/preview"></iframe>
+								</div>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<h2>Learning Lessons</h2>
+									<p>When I first started the project, I focused on designing and programming it for single-player, with the plan to add multiplayer later in development. One of the biggest challenges I faced with this approach was hard-coding many elements, such as enemy detection and power-up pickups, to a specific player. This caused significant issues when I added the second player: enemies either failed to detect the second player, and power-ups completely malfunctioned.</p> 
+									<p>To resolve this, I had to refactor much of the code responsible for player detection. Instead of targeting specific game objects, I modified the system so that enemies and power-ups would detect players by their tags. This change ensured that both enemies and power-ups could function properly, regardless of which player interacted with them.</p> 
+								</div>
+								<div class="rightText">
+									<iframe  width="680" height="400" allow="autoplay" class="left-img" src="https://drive.google.com/file/d/1ALY4aOvVqUGj1rAdJsRiSDjH0iwnjk4R/preview"></iframe>
+								</div>
+							</div>
+							<div class="block_1"></div>
+							<div class="title">
+								<h1>AI Enemies</h1>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<iframe  width="680" height="400" allow="autoplay" class="left-img" src="https://drive.google.com/file/d/1YfeGJn3uvpXMcY3wZYjp8_da3U0h5oiA/preview"></iframe>
+								</div>
+								<div class="rightText">
+									<ul>
+										<h2>Overview</h2>
+										<p>For this project, I implemented two types of enemies, each with distinct behaviors. When a player is detected, the enemies will perform their programmed actions until either they are defeated or lose sight of the player.</p>  
+									</ul>
+								</div>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<iframe  width="680" height="400" allow="autoplay" class="left-img" src="https://drive.google.com/file/d/1-Em-3DCkDi-h85gABe3CuiPB6EVntJMD/preview"></iframe>
+								</div>
+								<div class="rightText">
+									<ul>
+										<h2>Player Detection</h2>
+										<p>For this project, I implemented two types of enemies, each with unique behaviors. When a player is detected, the enemies will execute their programmed actions until they are either defeated or lose sight of the player.</p>
+										<p>If an enemy loses detection of the player, it returns to its idle state. The slime enemy moves back and forth, waiting for another player to enter its detection range. Meanwhile, the cannon enemy stops shooting until a player re-enters its range.</p>
+									</ul>
+								</div>
+							</div>
+							<div class="column-3">
+								<div class="leftText">
+									<iframe  width="680" height="400" allow="autoplay" class="left-img" src="https://drive.google.com/file/d/1f4thLgQQh4QWpWkUSWbBrpMcVHSqpw1k/preview"></iframe>
+								</div>
+								<div class="rightText">
+									<ul>
+										<h2>Enemy Interactions</h2>
+										<p>The enemies in the game have various interactions with the player. The slime enemy moves towards the player, damaging them on contact before destroying itself. However, if the player has a power-up, they can use it to interact with the slime in different ways. For example, using the Freeze power-up will freeze the slime, causing it to stop moving for a few seconds, while throwing a grenade at the slime will destroy it.</p>
+										<p>The cannon enemy behaves similarly. When it detects the player, it continuously shoots at them. If the player uses the Freeze power-up, the cannon will stop shooting until it is unfrozen. Using a grenade will destroy the cannon, just like with the slime.</p>
+									</ul>
+								</div>
+							</div>
+							<div class="block_1"></div>
+							<div class="title">
+							  <h1>Closing Thoughts</h1>
 						  </div>
-						  <div class="rightText">
-							  <ul>
-								<img src="images/1-2Preview.png" alt="Snow" width="580" height="300" class="right-img">
-							  </ul>
+						  <div class="column-3">
+							  <div class="centerText">
+								  <p>This project was my first after graduating from Full Sail University, and I aimed to apply everything I had learned throughout my degree. It was an incredibly valuable learning experience from both a design and programming perspective. While I’m not entirely satisfied with the art, as it didn’t align with my initial vision—especially given that I didn’t have an artist on the team and had to rely on internet resources—I’m proud of what we accomplished in terms of gameplay and design. The original concept was much smaller and less engaging, but through iteration, we created a more enjoyable experience.</p>  
+								  <p>In conclusion, this project taught me a great deal about design, project management, and programming. I’m excited to apply these lessons to my current project and continue growing as a designer.</p>  
+							  </div>
 						  </div>
-					  </div>
-					  <div class="column-3">
-						<div class="leftText">
-							<img src="images/1-3Preview.png" alt="Snow" width="580" height="300">
+						  <div class="block_1"></div>
+						  <div class="title">
+							<h1>Additional Links</h1>
 						</div>
-						<div class="rightText">
-							<ul>
-								<h2>Variety of Power Ups</h2>
-								<p>I added a variety of power-ups that players can use against enemies or other players. These include one-time use power-ups, like grenades that can destroy parts of the level or damage enemies, as well as reusable power-ups, like the Freeze ability, which immobilizes both enemies and players. Balancing these power-ups was crucial; each one was designed with both benefits and trade-offs. For example, the Balloon power-up increases jump height and reduces fall speed but slightly slows the player’s movement. Despite challenges with multiplayer integration, ensuring power-up balance was key to maintaining a fun and fair gameplay experience.</p>  
-							</ul>
+						<div class="ButtonsContainer">
+							<div class="centerText">
+								<a href="https://store.steampowered.com/app/2292080/Dreamscape_Runners/" target="_blank" class="button centerButton">Steam Page</a>
+							</div>
 						</div>
+						<div class="block_1"></div>
+						<!-- Footer -->
+						<footer id="footer">
+							<section class="iconssec">
+								<ul class="icons">
+									<li><a href="https://github.com/RmonteRodriguez" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="mailto:rmonterodriguez@gmail.com?subject=&body=" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						</footer>
 					</div>
-					<div class="column-3">
-						<div class="leftText">
-							<h2>Speedrun Timer</h2>
-							<p>To track player performance, I implemented a speedrun timer that records each player’s best time. The main challenge was ensuring each player had their own timer, especially for the multiplayer mode, so we could display individual times at the end of the race. After overcoming this, I set it up so that when a player crosses the finish line, their time is saved and displayed on the post-race scene.</p>  
-						</div>
-						<div class="rightText">
-							<ul>
-							  <img src="images/MultScreenshot1.png" alt="Snow" width="580" height="300" class="right-img">
-							</ul>
-						</div>
-					</div>
-					<div class="column-3">
-						<div class="leftText">
-							<img src="images/MultScreenshot2.png" alt="Snow" width="580" height="300">
-						</div>
-						<div class="rightText">
-							<ul>
-								<h2>Variety of hazards/enemies</h2>
-								<p>To keep gameplay engaging, we needed hazards and enemies. While adding hazards was straightforward, implementing enemies proved more challenging. Initially, I had hard-coded enemies to interact only with the first player, which caused issues when I added multiplayer, breaking enemy behavior. After fixing that, I faced another problem: enemies would fall through the level, walk off platforms, or get stuck in walls. I resolved these issues by fine-tuning the rigidbodies for better collision detection and ensuring enemies only spawned once the race started. This allowed the level to fully load with its collisions before the enemies appeared, preventing them from malfunctioning.</p>  
-							</ul>
-						</div>
-					</div>
-						  </div>
-						  <div class="block_1"></div> <hr />
-						  <div class="lower_section">
-							<h2>Tech</h2>
-							<ul>
-								<li><b>Platform: </b>Windows PC</li>
-								<li><b>Engine: </b>Unity</li>
-								<li><b>Language: </b>C#</li>
-								<li><b>Tools Used: </b>Unity, Plastic, Google docs, Discord, Confluence, Jira</li>
-								<li><b>Team Size: </b>6</li>
-								<li><b>Role: </b>Project Lead, Game Producer, Game Designer, Gameplay Programmer, System Programmer, Sound Designer  </li>
-							</ul>
-							<p></p>
-							<a href="https://remotegamestudio.com/#dream" target="_blank" class="button">Game Website</a>
-							<a href="https://store.steampowered.com/app/2292080/Dreamscape_Runners/" target="_blank" class="button">Steam Page</a>
-						</div>
-						</div>
-					</div>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<section>
-							<h2>Follow</h2>
-							<ul class="icons">
-								<li><a href="https://github.com/RmonteRodriguez" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-						</section>
-						<ul class="copyright">
-							<li>&copy; RmonteRodriguez. All rights reserved</li>
-						</ul>
-					</div>
-				</footer>
-
+				</div>
 			</div>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
